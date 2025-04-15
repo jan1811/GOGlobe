@@ -1,0 +1,689 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GoGlobe</title>
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- fonts -->
+    <link rel="stylesheetZ" href="font/fonts.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .size {
+            max-width: 400px;
+            margin-top: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            margin-left: 15px;
+            display: inline-block;
+
+        }
+
+        .box {
+            background-color: rgb(6, 61, 109);
+        }
+
+        #aq {
+            background-color: rgb(250, 251, 251);
+        }
+
+        #aq1 {
+            background-color: rgb(250, 251, 251);
+        }
+
+        #i2 {
+            text-align: center;
+            margin-top: 50px;
+
+        }
+
+        .packages {
+            padding: 120px 0 90px;
+        }
+
+        .packages-content {
+            margin-top: 65px;
+
+        }
+
+        /*single-package-item */
+        .single-package-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s;
+        }
+
+        .single-package-item-txt {
+            padding: 0 25px;
+        }
+
+        .single-package-item-txt img {
+            width: 200px;
+        }
+
+        .single-package-item h3 {
+            position: relative;
+            text-transform: capitalize;
+            font-size: 20px;
+            color: #565a5c;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            padding: 20px 0;
+        }
+
+        .single-package-item h3::after {
+            position: absolute;
+            content: " ";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #ebebeb;
+        }
+
+        .packages-para {
+            padding: 17px 0 0;
+            text-transform: capitalize;
+        }
+
+        .packages-para p {
+            font-size: 14px;
+            color: #aaa;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .packages-para p span {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .packages-review p i {
+            color: #ffdf00;
+            font-size: 16px;
+        }
+
+        .packages-review span {
+            margin-left: 20px;
+            font-size: 14px;
+            color: #aaa;
+            font-family: 'Poppins', sans-serif;
+            text-transform: capitalize;
+        }
+
+        .packages-btn {
+            padding: 20px;
+            font-size: 14px;
+            border: none;
+            color: #fff;
+            text-transform: capitalize;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s;
+
+        }
+
+        .packages-btn:hover {
+            box-shadow: 0 0 10px 1px rgba(112, 112, 112, 0.3);
+        }
+
+        .single-package-item:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+        }
+
+        .testemonial {
+            position: relative;
+            background: #f9f9f9;
+            padding: 120px 0;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .heading {
+            padding-top: 100px;
+        }
+
+        .heading::after {
+            content: ' ';
+            width: 100px;
+            height: 3px;
+            background-color: black;
+
+        }
+    </style>
+</head>
+
+
+
+<body class="">
+
+    <!-- header section starts  -->
+
+    <nav class="navbar">
+        <div class="container flex">
+            <img src="images/logo2.png " class="logo" alt="Logo" title="FirstFlight Travels">
+            <a href="index.html" class="site-brand">
+                Go<span>Globe</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="tourse.html" class="nav-link">Tours</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="review.html" class="nav-link">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header section ends -->
+    <header id="tours" class="flex header-sm">
+        <div class="container">
+            <div class="header-title">
+                <h1>Tours</h1>
+                <p style="font-size: 30px;">Travel the world, experience the greatness, it's the best gift given by
+                    nature</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- tours section starts  -->
+
+    <div class="container tours" id="aq">
+
+        <h1 class="heading" id="i2" data-aos="zoom-out">Popular places</h1>
+
+
+        <div class="packages-content">
+            <div class="row">
+                <div class="col size">
+                    <div class="single-package-item">
+                        <img src="images/tour-img-1.webp" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>italy <span class="pull-right">$499</span></h3>
+                            <div class="packages-para">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> transportation
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    <a href="contact.html"> book now </a>
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+                <div class="col  size">
+                    <div class="single-package-item">
+                        <img src="images/tour-img-2.webp" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>england <span class="pull-right">$1499</span></h3>
+                            <div class="packages-para">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> transportation
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    <a href="contact.html"> book now </a>
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+
+                <div class="col size">
+                    <div class="single-package-item">
+                        <img src="images/tour-img-3.webp" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>france <span class="pull-right">$1199</span></h3>
+                            <div class="packages-para">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> transportation
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    <a href="contact.html"> book now </a>
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+                </div><!--/.col-->
+            </div>
+            <div class="row">
+                <div class="col size">
+                    <div class="single-package-item">
+                        <img src="images/tour-img-4.webp" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>india <span class="pull-right">$799</span></h3>
+                            <div class="packages-para">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> transportation
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    <a href="contact.html"> book now </a>
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+
+                <div class="col size">
+                    <div class="single-package-item">
+                        <img src="images/tour-img-5.webp" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>spain <span class="pull-right">$999</span></h3>
+                            <div class="packages-para">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> transportation
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    <a href="contact.html"> book now </a>
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+                <div class="col size">
+                    <div class="single-package-item">
+                        <img src="images/tour-img-4.webp    " alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>london <span class="pull-right">$799</span></h3>
+                            <div class="packages-para">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> transportation
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    <a href="contact.html"> book now </a>
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+
+
+            </div><!--/.row-->
+        </div><!--/.packages-content-->
+        <!--/.container-->
+        <div class="row">
+            <div class="col size">
+                <div class="single-package-item">
+                    <img src="images/gallery-5.jpg" alt="package-place">
+                    <div class="single-package-item-txt">
+                        <h3>canada <span class="pull-right">$799</span></h3>
+                        <div class="packages-para">
+                            <p>
+                                <span>
+                                    <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                </span>
+                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                            </p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-angle-right"></i> transportation
+                                </span>
+                                <i class="fa fa-angle-right"></i> food facilities
+                            </p>
+                        </div><!--/.packages-para-->
+                        <div class="packages-review">
+                            <p>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>2544 review</span>
+                            </p>
+                        </div><!--/.packages-review-->
+                        <div class="about-btn">
+                            <button class="about-view packages-btn">
+                                <a href="contact.html"> book now </a>
+                            </button>
+                        </div><!--/.about-btn-->
+                    </div><!--/.single-package-item-txt-->
+                </div><!--/.single-package-item-->
+
+            </div><!--/.col-->
+
+            <div class="col size">
+                <div class="single-package-item">
+                    <img src="images/gallery-2.jpg" alt="package-place">
+                    <div class="single-package-item-txt">
+                        <h3>spain <span class="pull-right">$999</span></h3>
+                        <div class="packages-para">
+                            <p>
+                                <span>
+                                    <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                </span>
+                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                            </p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-angle-right"></i> transportation
+                                </span>
+                                <i class="fa fa-angle-right"></i> food facilities
+                            </p>
+                        </div><!--/.packages-para-->
+                        <div class="packages-review">
+                            <p>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>2544 review</span>
+                            </p>
+                        </div><!--/.packages-review-->
+                        <div class="about-btn">
+                            <button class="about-view packages-btn">
+                                <a href="contact.html"> book now </a>
+                            </button>
+                        </div><!--/.about-btn-->
+                    </div><!--/.single-package-item-txt-->
+                </div><!--/.single-package-item-->
+
+            </div><!--/.col-->
+            <div class="col size">
+                <div class="single-package-item">
+                    <img src="images/gallery-3.jpg    " alt="package-place">
+                    <div class="single-package-item-txt">
+                        <h3>thailand <span class="pull-right">$799</span></h3>
+                        <div class="packages-para">
+                            <p>
+                                <span>
+                                    <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                </span>
+                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                            </p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-angle-right"></i> transportation
+                                </span>
+                                <i class="fa fa-angle-right"></i> food facilities
+                            </p>
+                        </div><!--/.packages-para-->
+                        <div class="packages-review">
+                            <p>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>2544 review</span>
+                            </p>
+                        </div><!--/.packages-review-->
+                        <div class="about-btn">
+                            <button class="about-view packages-btn">
+                                <a href="contact.html"> book now </a>
+                            </button>
+                        </div><!--/.about-btn-->
+                    </div><!--/.single-package-item-txt-->
+                </div><!--/.single-package-item-->
+
+            </div><!--/.col-->
+
+
+        </div><!--/.row-->
+    </div><!--/.container-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    Go<span>Globe</span>
+                </a>
+                <p class="text">Take in the beauty of it all wild rivers, scenic bikeways, mountain vistas, abundant
+                    farmlands and show your love for the people who make this place so special.</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Follow us on: </h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com" target="_blank">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div>
+                    <i class="fa fa-phone"></i> +91 9673480291 <br><br>
+                    <i class="fa fa-envelope"></i> info@gmail.com
+                </div>
+            </div>
+
+            <div class="footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href="#">Thailand</a></li>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">Maldives</a></li>
+                    <li><a href="#">Switzerland</a></li>
+                    <li><a href="#">Germany</a></li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" class="btn" value="Subscribe">
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright Module ©. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
